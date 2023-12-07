@@ -12,6 +12,18 @@ header {
     width: 100%;
 }
 
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.navbar {
+    outline-style: solid;
+}
+
 .navbar ul {
     display: flex;
     list-style-type: none;
@@ -32,7 +44,7 @@ header {
 
 a {
     color: #fefefe;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
