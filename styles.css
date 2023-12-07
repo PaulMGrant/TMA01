@@ -1,15 +1,37 @@
 body {
-    margin: 0;
-    padding: 0;
     font-size: 14px;
-    font-family: Times, 'Times New Roman', Georgia, serif;
-    max-width: 1024px;
+    color: #333333;
+    font-family: Times, 'Times New Roman', georgia, serif;
+    width: 1024px;
 }
 
-header {
+nav ul {
+    list-style-type: none;
+    /*removed bullet points*/
+    margin: 0;
+    padding: 0;
     background-color: #333333;
+    font-size: 120%;
+    overflow: hidden;
+    width: 1024px;
+}
+
+nav li {
+    float: left;
+
+}
+
+nav li a {
+    display: block;
+    /*puts items inline*/
     color: #fefefe;
-    width: 100%;
+    text-align: left;
+    padding: 1em 1em;
+    text-decoration: underline;
+}
+
+nav li a:hover {
+    border-bottom: 3px solid #ff0000;
 }
 
 #title h1 {
@@ -17,59 +39,83 @@ header {
 }
 
 #title h4 {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
-.navbar {
-    outline-style: solid;
+.active {
+    border-bottom: 3px solid #ff0000;
 }
 
-.navbar ul {
-    display: flex;
-    list-style-type: none;
-    font-size: 120%;
-    flex-direction: row;
+article {
+    margin-top: 5px;
+    width: 250px;
+    height: 150px;
+    padding: 0.25rem;
+    margin-bottom: 5px;
+    /*outline-style: dashed;
+    outline-color: blueviolet;*/
+
 }
 
-.navbar ul li {
-    padding: 10px;
-    padding-right: 50px;
+#article1 {
+    position: absolute;
+    left: 20px;
+    top: 160px;
+
 }
 
-.currentLink {
-    border-bottom-color: #ff0000;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
+#article2 {
+    position: absolute;
+    left: 276px;
+    top: 160px;
 }
 
-.navbar ul li a {
-    color: #fefefe;
-    text-decoration: underline;
+#article3 {
+    position: absolute;
+    left: 532px;
+    top: 160px;
 }
 
-.navbar ul li a:hover {
-    border-bottom-color: #ff0000;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
+#article4 {
+    position: absolute;
+    left: 20px;
+    top: 370px;
+}
+
+#article5 {
+    position: absolute;
+    left: 276px;
+    top: 370px;
+}
+
+#article6 {
+    position: absolute;
+    left: 532px;
+    top: 370px;
+}
+
+img {
+    width: 250px;
+    height: 170px;
+}
+
+section {
+    width: 250px;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: left;
 }
 
 aside {
-    margin-left: 15px;
-    padding-left: 15px;
+    width: 256px;
+    position: absolute;
+    left: 788px;
+    top: 160px;
     float: right;
+    /*outline-style: dashed;
+    outline-color: blueviolet*/
 }
 
-.story {
-    margin-bottom: 15px;
-}
-
-.story h3 {
-    margin: 0;
-    padding: 0;
-}
-
-.story h6 {
-    margin: 0;
-    padding: 0;
+aside h1 {
+    margin-left: 15px;
 }
