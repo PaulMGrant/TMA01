@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-size: 14px;
     font-family: Times, 'Times New Roman', Georgia, serif;
-    width: 1024px;
+    max-width: 1024px;
 }
 
 header {
@@ -43,23 +43,21 @@ header {
     border-bottom-style: solid;
 }
 
-a {
+.navbar ul li a {
     color: #fefefe;
     text-decoration: underline;
 }
 
-a:hover {
+.navbar ul li a:hover {
     border-bottom-color: #ff0000;
     border-bottom-width: 3px;
     border-bottom-style: solid;
 }
 
 aside {
-    width: 25%;
-    float: right;
     margin-left: 15px;
     padding-left: 15px;
-
+    float: right;
 }
 
 .story {
@@ -74,8 +72,4 @@ aside {
 .story h6 {
     margin: 0;
     padding: 0;
-}
-
-img {
-    width: 25%;
 }
