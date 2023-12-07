@@ -40,3 +40,25 @@ a:hover {
     border-bottom-width: 3px;
     border-bottom-style: solid;
 }
+
+.sidenav {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    top: 25%;
+    right: 0;
+}
+
+.story {
+    margin-bottom: 15px;
+}
+
+.story h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.story h6 {
+    margin: 0;
+    padding: 0;
+}
